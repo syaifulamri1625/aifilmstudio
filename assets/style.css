@@ -1,1 +1,119 @@
+/* style.css - AI FILM Studio Web */
+
+/* Global */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #06070a;
+  color: #fff;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #0f1720;
+}
+
+header .brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+header img {
+  width: 48px;
+  height: 48px;
+}
+
+nav a {
+  color: #9aa6b2;
+  text-decoration: none;
+  margin-left: 16px;
+  font-weight: 600;
+}
+
+nav a.cta {
+  background: linear-gradient(90deg, #00b3ff, #d4a62a);
+  padding: 8px 14px;
+  border-radius: 8px;
+  color: #000;
+}
+
+/* Hero */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 60px 40px;
+  gap: 20px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  background: linear-gradient(90deg, #00b3ff, #d4a62a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+  color: #9aa6b2;
+}
+
+.hero img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+/* Features */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.04);
+  padding: 20px;
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.5);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #00b3ff;
+}
+
+.card p {
+  color: #ccc;
+  font-size: 14px;
+}
+
+/* Demo section */
+#demo {
+  padding: 40px;
+  text-align: center;
+}
+
+#demo h2 {
+  margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+  padding: 20px 40px;
+  text-align: center;
+  color: #9aa6b2;
+  background: #0f1720;
+  font-size: 14px;
+}
 
