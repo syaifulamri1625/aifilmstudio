@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI FILM Studio — Where AI Meets Cinematic Art</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body{margin:0;font-family:Inter,sans-serif;background:#06070a;color:#fff}
+    header{display:flex;justify-content:space-between;align-items:center;padding:20px 40px;background:#0f1720}
+    header .brand{display:flex;align-items:center;gap:12px}
+    header img{width:48px;height:48px}
+    nav a{color:#9aa6b2;text-decoration:none;margin-left:16px}
+    nav a.cta{background:linear-gradient(90deg,#00b3ff,#d4a62a);padding:8px 14px;border-radius:8px;color:#000}
+    .hero{display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:60px 40px;gap:20px}
+    .hero h1{font-size:36px;background:linear-gradient(90deg,#00b3ff,#d4a62a);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+    .hero p{color:#9aa6b2}
+    .hero img{max-width:100%;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,0.6)}
+    .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;padding:40px}
+    .card{background:rgba(255,255,255,0.04);padding:20px;border-radius:12px}
+    .card h3{margin-top:0;color:#00b3ff}
+    footer{padding:20px 40px;text-align:center;color:#9aa6b2;background:#0f1720}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img src="assets/logo.png" alt="Logo"/>
+      <div>
+        <strong>AI FILM Studio</strong><br>
+        <small>Produksi Film Otomatis</small>
+      </div>
+    </div>
+    <nav>
+      <a href="#features">Fitur</a>
+      <a href="#demo" class="cta">Demo</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h1>Bawa Legenda ke Layar Dengan Kekuatan AI</h1>
+      <p>AI FILM Studio menggabungkan virtual production, AI-driven VFX, pipeline otomatis, dan distribusi cerdas untuk menciptakan film epik berkualitas internasional.</p>
+    </div>
+    <img src="assets/poster.jpg" alt="Poster"/>
+  </section>
+
+  <section id="features" class="features">
+    <div class="card"><h3>🎨 Pra-Produksi Cerdas</h3><p>AI storyboard, concept art, pre-visualization.</p></div>
+    <div class="card"><h3>🎥 Produksi Virtual</h3><p>LED Volume, motion capture, kamera virtual otomatis.</p></div>
+    <div class="card"><h3>🖌️ Pascaproduksi Otomatis</h3><p>AI VFX, color grading, sound design generatif.</p></div>
+    <div class="card"><h3>🌍 Distribusi Global</h3><p>Trailer otomatis, AI-driven marketing, dubbing multibahasa.</p></div>
+  </section>
+
+  <section id="demo" style="padding:40px;text-align:center">
+    <h2>🎬 Demo Reel</h2>
+    <video src="assets/demo.mp4" width="600" controls poster="assets/poster.jpg"></video>
+  </section>
+
+  <footer>© 2025 AI FILM Studio — Where Artificial Intelligence Meets Cinematic Art</footer>
+</body>
+</html>
