@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI FILM Studio — Nesat Pictures</title>
+  <meta name="description" content="AI FILM Studio — Produksi Film Otomatis Berbasis Kecerdasan Buatan. Links: pitch deck, proposal, demo, contact." />
+
+  <!-- Google font (fallback if offline) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#0b0f14;
+      --card:#0f1720;
+      --accent:#00b3ff;      /* neon blue */
+      --gold:#d4a62a;        /* gold accent */
+      --muted:#9aa6b2;
+      --glass: rgba(255,255,255,0.03);
+      --radius:14px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: linear-gradient(180deg, #071018 0%, #07141b 60%, #050608 100%);
+      color:#fff;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:24px;
+    }
+
+    .container{
+      width:100%;
+      max-width:760px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:20px;
+      padding:28px;
+      box-shadow: 0 10px 30px rgba(4,6,10,0.65);
+      border: 1px solid rgba(255,255,255,0.03);
+    }
+
+    /* header */
+    .top{
+      display:flex;
+      gap:16px;
+      align-items:center;
+    }
+    .logo {
+      width:72px;
+      height:72px;
+      border-radius:12px;
+      background:linear-gradient(135deg,var(--gold),var(--accent));
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.6), inset 0 -6px 12px rgba(0,0,0,0.12);
+      flex-shrink:0;
+    }
+    .logo svg{width:44px;height:44px;display:block;filter: drop-shadow(0 6px 18px rgba(0,0,0,0.5));}
+
+    .title{
+      display:flex;
+      flex-direction:column;
+      gap:4px;
+    }
+    .title h1{
+      margin:0;
+      font-size:20px;
+      letter-spacing:0.6px;
+      font-weight:700;
+      color:linear-gradient(90deg,var(--gold),var(--accent));
+    }
+    .title p{margin:0;font-size:13px;color:var(--muted)}
+
+    /* bio card */
+    .bio{
+      margin-top:18px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00));
+      border-radius:12px;
+      padding:18px;
+      display:flex;
+      gap:14px;
+      align-items:flex-start;
+    }
+    .bio .avatar{
+      width:88px;height:88px;border-radius:10px;
+      background: linear-gradient(180deg, rgba(0,179,255,0.08), rgba(212,166,42,0.06));
+      display:flex;align-items:center;justify-content:center;
+      border:1px solid rgba(255,255,255,0.03);
+      flex-shrink:0;
+    }
+    .bio .avatar img{width:82px;height:82px;object-fit:cover;border-radius:8px}
+
+    .bio .text h2{margin:0;font-size:18px}
+    .bio .text p{margin:6px 0 0 0;color:var(--muted);font-size:13px;line-height:1.4}
+
+    /* link buttons */
+    .links{
+      margin-top:18px;
+      display:flex;flex-direction:column;gap:12px;
+    }
+    .btn{
+      display:block;
+      text-decoration:none;
+      padding:14px 18px;
+      border-radius:12px;
+      background: linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border:1px solid rgba(255,255,255,0.04);
+      color:#e6f7ff;
+      font-weight:600;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+      transition: transform .12s ease, box-shadow .12s ease;
+      display:flex;align-items:center;justify-content:space-between;gap:12px;
+    }
+    .btn:hover{transform:translateY(-4px);box-shadow: 0 18px 40px rgba(0,0,0,0.6)}
+    .btn .label{display:flex;gap:12px;align-items:center}
+    .chip{width:44px;height:44px;border-radius:10px;background:linear-gradient(90deg,var(--accent),var(--gold));display:flex;align-items:center;justify-content:center;color:#021018;font-weight:700}
+    .btn small{color:var(--muted);font-weight:500;font-size:12px}
+
+    /* features */
+    .features{
+      margin-top:20px;
+      display:grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap:12px;
+    }
+    .feature{
+      padding:12px;border-radius:10px;background:var(--glass);border:1px solid rgba(255,255,255,0.02);
+      color:var(--muted);font-size:13px;
+    }
+    .feature h4{margin:0 0 6px 0;font-size:14px;color:#fff}
+    .feature p{margin:0;font-size:13px}
+
+    /* social footer */
+    .meta{
+      margin-top:18px;display:flex;justify-content:space-between;align-items:center;gap:12px;
+      flex-wrap:wrap;
+    }
+    .socials{display:flex;gap:10px}
+    .socials a{display:inline-block;width:40px;height:40px;border-radius:8px;background:rgba(255,255,255,0.02);display:flex;align-items:center;justify-content:center;color:var(--muted);text-decoration:none}
+    footer{margin-top:18px;color:var(--muted);font-size:12px;text-align:center}
+
+    /* responsive */
+    @media (max-width:560px){
+      .container{padding:18px}
+      .features{grid-template-columns:1fr}
+      .bio{flex-direction:row}
+    }
+  </style>
+</head>
+<body>
+  <main class="container" role="main" aria-label="AI Film Studio Link Hub">
+    <header class="top">
+      <div class="logo" aria-hidden="true">
+        <!-- simple camera + brain icon SVG -->
+        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="none">
+          <defs>
+            <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+              <stop offset="0" stop-color="#00b3ff"/>
+              <stop offset="1" stop-color="#d4a62a"/>
+            </linearGradient>
+          </defs>
+          <rect x="4" y="18" width="40" height="28" rx="4" stroke="url(#g)" stroke-width="2" />
+          <circle cx="52" cy="32" r="8" stroke="url(#g)" stroke-width="2" />
+          <path d="M18 26c3 0 5-2 7-2s4 2 6 2" stroke="url(#g)" stroke-width="1.6" stroke-linecap="round"/>
+          <path d="M31 38c1.6-2.6 4-4 8-4" stroke="url(#g)" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+      </div>
+
+      <div class="title">
+        <h1>AI FILM Studio</h1>
+        <p>Produksi Film Otomatis Berbasis Kecerdasan Buatan</p>
+      </div>
+    </header>
+
+    <section class="bio" aria-label="About">
+      <div class="avatar" aria-hidden="true">
+        <!-- optional place for cover art; keep as gradient placeholder -->
+        <img alt="AI FILM Studio" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODIiIGhlaWdodD0iODIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iNDEiIGN5PSI0MSIgcj0iNDEiIGZpbGw9IiMwNTA4MTgiIC8+PC9zdmc+" />
+      </div>
+      <div class="text">
+        <h2>Microsite / Link Hub</h2>
+        <p>Selamat datang di AI FILM Studio — platform produksi film otomatis yang mengintegrasikan kecerdasan buatan di setiap tahap (pra-produksi, produksi, pasca-produksi, dan distribusi). Gunakan tombol di bawah untuk mengakses pitch deck, demo, atau menghubungi tim kami.</p>
+      </div>
+    </section>
+
+    <nav class="links" aria-label="Main links">
+      <!-- Replace href values with real URLs -->
+      <a class="btn" href="https://example.com/pitch-deck" target="_blank" rel="noopener">
+        <div class="label">
+          <div class="chip">PD</div>
+          <div>
+            <div>Pitch Deck & Proposal</div>
+            <small>Download (PDF)</small>
+          </div>
+        </div>
+        <small>→</small>
+      </a>
+
+      <a class="btn" href="https://example.com/showcase" target="_blank" rel="noopener">
+        <div class="label">
+          <div class="chip">DE</div>
+          <div>
+            <div>Demo Reel / Trailer</div>
+            <small>Watch video</small>
+          </div>
+        </div>
+        <small>→</small>
+      </a>
+
+      <a class="btn" href="https://example.com/services" target="_blank" rel="noopener">
+        <div class="label">
+          <div class="chip">SV</div>
+          <div>
+            <div>Layanan & Paket</div>
+            <small>Pra-Produksi → Publikasi</small>
+          </div>
+        </div>
+        <small>→</small>
+      </a>
+
+      <a class="btn" href="mailto:hello@aifilmstudio.id" target="_blank" rel="noopener">
+        <div class="label">
+          <div class="chip">CT</div>
+          <div>
+            <div>Hubungi Kami</div>
+            <small>Email untuk investor & kolaborasi</small>
+          </div>
+        </div>
+        <small>→</small>
+      </a>
+    </nav>
+    <section class="features" aria-label="Features">
+      <div class="feature">
+        <h4>Pembuat Naskah</h4>
+        <p>Pembuat Naskah</p>
+      </div>
+      <div class="feature">
+        <h4>Pembuat Gambar</h4>
+        <p>Pembuat Gambar</p>
+      </div>
+      <div class="feature">
+        <h4>Pembuat Video</h4>
+        <p>Pembuat Audio</p>
+      </div>
+      <div class="feature">
+        <h4>Pembuat Audio & Musik</h4>
+        <p>Pembuat Audio & Musik</p>
+      </div>
+    </section>
+    <section class="features" aria-label="Features">
+      <div class="feature">
+        <h4>Pra-Produksi Cerdas</h4>
+        <p>AI storyboard, concept art, pre-visualization, dan simulasi casting.</p>
+      </div>
+      <div class="feature">
+        <h4>Produksi Virtual</h4>
+        <p>LED Volume, motion capture & kamera virtual untuk efisiensi lokasi.</p>
+      </div>
+      <div class="feature">
+        <h4>Pascaproduksi Otomatis</h4>
+        <p>AI VFX, color grading, sound design, dubbing multibahasa.</p>
+      </div>
+      <div class="feature">
+        <h4>Distribusi & Marketing</h4>
+        <p>Trailer otomatis, AI-driven marketing, analitik audiens.</p>
+      </div>
+    </section>
+
+    <div class="meta" aria-hidden="false">
+      <div class="socials">
+        <a href="https://instagram.com" target="_blank" rel="noopener" title="Instagram">IG</a>
+        <a href="https://youtube.com" target="_blank" rel="noopener" title="YouTube">YT</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener" title="LinkedIn">IN</a>
+      </div>
+      <div style="color:var(--muted);font-size:13px">AI FILM Studio • © 2025</div>
+    </div>
+
+    <footer>
+      <small>Made with ♥ — SMKN 1 Gunung Sindur. Confidential information — for partners & investors.</small>
+    </footer>
+  </main>
+</body>
+</html>
