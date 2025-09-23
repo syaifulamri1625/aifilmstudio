@@ -21,6 +21,12 @@ Tujuan utama kami adalah menciptakan proses produksi film yang lebih **efisien, 
 
 ---
 
+/docs       -> Dokumentasi & Manual Book
+/pitch      -> Pitch Deck & Proposal
+/microsite  -> Kode microsite (HTML/CSS)
+/assets     -> Logo, poster, ilustrasi
+
+
 ## 🚀 Cara Penggunaan
 Kloning repositori ini ke perangkat Anda:
 
