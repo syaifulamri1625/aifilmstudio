@@ -2,7 +2,7 @@
 <p align="center"><i>Produksi Film Otomatis Berbasis Kecerdasan Buatan (Artificial Intelligence)</i></p>
 
 <p align="center">
-  <img src="https://via.placeholder.com/240x240.png?text=AI+Film+Studio" alt="AI FILM Studio Logo" width="200"/>
+  <img src="https://raw.github.com/syaifulamri1625/aifilmstudio/branch/path/to/logoAIFilm.png" alt="AI FILM Studio Logo" width="200"/>
 </p>
 
 <p align="center">
