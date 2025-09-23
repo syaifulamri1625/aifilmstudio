@@ -1,22 +1,37 @@
-# 🎬 AI FILM Studio
-*Produksi Film Otomatis Berbasis Kecerdasan Buatan (Artificial Intelligence)*
+<h1 align="center">🎬 AI FILM Studio</h1>
+<p align="center"><i>Produksi Film Otomatis Berbasis Kecerdasan Buatan (Artificial Intelligence)</i></p>
+
 <p align="center">
-  <img src="https://via.placeholder.com/200x200.png?text=AI+Film+Studio+Logo" width="160" alt="AI FILM Studio Logo">
+  <img src="https://via.placeholder.com/240x240.png?text=AI+Film+Studio" alt="AI FILM Studio Logo" width="200"/>
 </p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Build-AI%20Powered-blue?style=for-the-badge&logo=github" />
+  <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge&logo=vercel" />
+  <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" />
+</p>
+
 ---
+
 ## 🌟 Tentang Proyek
-**AI FILM Studio** adalah ekosistem produksi film inovatif yang memadukan teknologi **Artificial Intelligence** dengan seni sinematik.  
-Tujuan utama kami adalah menciptakan proses produksi film yang lebih **efisien, otomatis, dan berkualitas global**.
+**AI FILM Studio** adalah ekosistem produksi film inovatif yang mengintegrasikan teknologi **Artificial Intelligence** dalam setiap tahapan produksi film.  
+🎯 Tujuan kami adalah menciptakan proses produksi yang lebih **efisien, otomatis, dan berkualitas global**.
+
 ---
+
 ## ⚙️ Fitur Utama
-- 🎨 **Pra-Produksi Cerdas** – AI storyboard, concept art, pre-visualization  
-- 🎥 **Produksi Virtual** – LED Volume, motion capture, kamera virtual otomatis  
-- 🖌️ **Pascaproduksi Otomatis** – AI VFX, color grading, sound design generatif  
-- 🌍 **Distribusi Global** – Trailer otomatis, AI-driven marketing, dubbing multibahasa  
+| Tahap | Deskripsi |
+|-------|-----------|
+| 🎨 **Pra-Produksi Cerdas** | AI storyboard, concept art, pre-visualization |
+| 🎥 **Produksi Virtual** | LED Volume, motion capture, kamera virtual otomatis |
+| 🖌️ **Pascaproduksi Otomatis** | AI VFX, color grading, sound design generatif |
+| 🌍 **Distribusi Global** | Trailer otomatis, AI-driven marketing, dubbing multibahasa |
+
 ---
+
 ## 🚀 Cara Penggunaan
-Kloning repositori ini ke perangkat Anda:
+Kloning repositori ke perangkat lokal Anda:
+
 ```bash
 git clone https://github.com/username/ai-film-studio.git
 cd ai-film-studio
-🤝 Kontribusi
