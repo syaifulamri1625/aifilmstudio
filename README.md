@@ -20,7 +20,3 @@ Kloning repositori ini ke perangkat Anda:
 git clone https://github.com/username/ai-film-studio.git
 cd ai-film-studio
 🤝 Kontribusi
-
-Kami terbuka untuk kolaborasi dengan kreator, investor, maupun developer AI.
-Silakan ajukan pull request atau hubungi kami melalui email:
-📩 hello@aifilmstudio.id
